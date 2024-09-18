@@ -1,11 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Banner from "../components/General/Banner.astro";
+import Service from "../components/Body/Service.astro";
 ---
 
 <Layout title="JR Web Desing">
     <Banner />
-    <div class="m-5 md:mx-28 grid gap-12">
+    <div class="bg-white m-5 md:mx-8 p-9 rounded-2xl grid gap-12">
         <div class="flex justify-center items-center">
             <h1 class="text-center md:text-4xl font-semibold">
                 Diseño y Desarrollo de Páginas Web Profesionales
@@ -17,18 +18,23 @@ import Banner from "../components/General/Banner.astro";
                 <img src="/Icons/pngwing.com.png" alt="" />
             </div>
         </div>
-        <div class="flex justify-center items-center bg-[#c7dfff] rounded-3xl p-5"> 
-            <img class="hidden md:block md:w-[24%]" src="/Icons/flecha.png" alt="">
-            <div>
-                <h2 class="text-center font-bold md:text-5xl mb-5">
-                    Soluciones en Diseño y Desarrollo Web a Medida
-                </h2>
-                <p class="text-center md:text-2xl">
-                    Ofrecemos desarrollo de páginas web personalizadas, optimizadas
-                    para SEO y orientadas a mejorar la experiencia del usuario y las
-                    conversiones.
-                </p>
-            </div>
+    </div>
+    <div class="flex justify-center items-center bg-[#c7dfff] p-5">
+        <img
+            class="hidden md:block md:w-[24%]"
+            src="/Icons/flecha.png"
+            alt=""
+        />
+        <div>
+            <h2 class="text-center font-bold md:text-5xl mb-5">
+                Soluciones en Diseño y Desarrollo Web a Medida
+            </h2>
+            <p class="text-center md:text-2xl">
+                Ofrecemos desarrollo de páginas web personalizadas, optimizadas
+                para SEO y orientadas a mejorar la experiencia del usuario y las
+                conversiones.
+            </p>
         </div>
     </div>
+    <Service />
 </Layout>
